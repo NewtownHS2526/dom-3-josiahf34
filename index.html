@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arcade Prize Booth - QuerySelector Lesson</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container mx-auto px-4 py-8 text-center">
+      <section class="py-8">
+        <h1 class="text-4xl font-bold mb-4">Welcome to the Arcade Prize Booth</h1>
+        <p class="mb-6">Click an item to add it to your prize bag.</p>
+
+        <div
+          id="button-group"
+          class="grid grid-cols-1 md:grid-cols-5 gap-4 max-w-5xl mx-auto"
+        >
+          <button class="button px-6 py-3 text-white" id="sticker">⭐ Sticker Pack: $0.50</button>
+          <button class="button px-6 py-3 text-white" id="keychain">🔑 Keychain: $1.50</button>
+          <button class="button px-6 py-3 text-white" id="plush">🧸 Mini Plush: $4.00</button>
+          <button class="button px-6 py-3 text-white" id="comic">📚 Comic Book: $2.75</button>
+          <button class="button px-6 py-3 text-white" id="mystery">🎁 Mystery Box: $3.25</button>
+        </div>
+      </section>
+
+      <section class="py-8">
+        <h3 class="text-2xl font-semibold mb-4">Your Items:</h3>
+        <div id="shopping-cart"></div>
+        <h4 class="text-xl font-semibold mt-4">
+          Your total: $<span id="total-span">0</span>
+        </h4>
+      </section>
+    </div>
+  </body>
+</html>
